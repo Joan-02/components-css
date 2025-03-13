@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 50px;
+    padding: 12px 52px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(213, 100%, 53%);
+    font-size: 18px;
+    color: hsl(213, 100%, 100%);
+    line-height: 1.45;
+}
+
+.btn--secondary {
+    border: 2px solid hsl(213, 100%, 53%);
+    background-color: hsl(213, 100%, 100%);
+    color: hsl(213, 100%, 53%);
+}
+
+.display-flex {
+    display: flex;
+    gap: 68px;
+}
