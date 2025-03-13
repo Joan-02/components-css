@@ -25,6 +25,9 @@ html {
     height: 50px;
     padding: 12px 52px;
     outline: none;
+    /*ponemos el borde descompuesto pero con color tranparent para que ocupe lo mismo que los botones
+    que tengan borde, lo descomponemos porque si despues solo tenemos que cambiar una opcion es 
+    más fácil*/
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
@@ -35,65 +38,59 @@ html {
     line-height: 1.45;
     cursor: pointer;
     transition: background-color 0.2s ease-in;
-}
 
-.btn:hover {
-    background-color: hsl(213, 100%, 65%);
-}
+    &:hover {
+        background-color: hsl(213, 100%, 65%);
+    }
 
-.btn:active {
-    background-color: hsl(213, 92%, 41%);
+    &:active {
+        background-color: hsl(213, 92%, 41%);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
 }
 
 .btn--secondary {
     border-color: hsl(213, 100%, 53%);
     background-color: hsl(213, 100%, 100%);
     color: hsl(213, 100%, 53%);
-}
 
-.btn--secondary:hover {
-    border-color: hsl(213, 100%, 65%);
-    color: hsl(213, 100%, 65%);
-    background-color: hsl(213, 100%, 100%);
-}
+    &:hover {
+        border-color: hsl(213, 100%, 65%);
+        color: hsl(213, 100%, 65%);
+        background-color: hsl(213, 100%, 100%);
+    }
 
-.btn--secondary:active {
-    border-color: hsl(213, 92%, 41%);
-    color: hsl(213, 92%, 41%);
+    &:active {
+        border-color: hsl(213, 92%, 41%);
+        color: hsl(213, 92%, 41%);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
 }
 
 .text--link {
     border: none;
     background-color: hsl(213, 100%, 100%);
     color: hsl(213, 100%, 53%);
-}
 
-.text--link:hover {
-    color: hsl(213, 100%, 65%);
-    background-color: transparent;
-}
+    &:hover {
+        color: hsl(213, 100%, 65%);
+        background-color: transparent;
+    }
 
-.text--link:active {
-    color: hsl(213, 92%, 41%);
-}
+    &:active {
+        color: hsl(213, 92%, 41%);
+    }
 
-.btn, 
-[disabled]
-{
-    opacity: 0.2;
-    cursor: not-allowed;
-}
-
-.btn--secondary, 
-[disabled]
-{
-    opacity: 0.2;
-    cursor: not-allowed;
-}
-
-.text--link,
-[disabled] 
-{
-    opacity: 0.2;
-    cursor: not-allowed;
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
 }
