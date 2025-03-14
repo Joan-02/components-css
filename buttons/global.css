@@ -16,6 +16,13 @@
     --button-color-main: var(--color-blue);
     --button-color-light: var(--color-blue-ligth);
     --button-color-dark: var(--color-blue-dark);
+
+    /* -----> Font */
+    --font-family: "Poppins", sans-serif;
+    
+    --font-regular: 400;
+
+    --font-18: 18px;
 }
 
 * {
