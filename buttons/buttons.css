@@ -11,7 +11,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
-    border-radius: 10px;
+    border-radius: var(--space-10);
     background-color: var(--button-color-main);
     font-size: var(--font-18);
     color: var(--color-white);
